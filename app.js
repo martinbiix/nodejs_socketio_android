@@ -17,7 +17,7 @@ var express =require('express'),
         });
 
         socket.on('logout',function(dato){
-            var respose =':( -> '+dato;
+            var response =':( -> '+dato;
             console.log('logout: '+response);
             io.sockets.emit('response',response);
         });
